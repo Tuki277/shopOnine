@@ -1,0 +1,3 @@
+{
+    "mongoURL": "mongodb+srv://shopOnline:1234@shop.b3f1w.mongodb.net/tb_1?retryWrites=true&w=majority"
+}

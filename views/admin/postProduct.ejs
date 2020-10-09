@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Đăng sản phẩm</title>
+
+    <!-- Bootstrap -->
+    <link href="../admin/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../admin/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../admin/css/nprogress.css" rel="stylesheet">
+    <!-- Dropzone.js -->
+    <link href="../admin/dropzone.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <!-- page content -->
+			<div class="right_col" role="main">
+				<div class="x_panel">
+					<div class="x_title">
+						<h2>Đăng sản phẩm</h2>
+						<div class="clearfix"></div>
+					</div>
+					<div class="x_content">
+						<form class="form-horizontal form-label-left" action="/postProduct" enctype="multipart/form-data" method="POST">
+							<div class="form-group row">
+								<div class="col-auto my-1">
+									<label class="mr-sm-2" for="list">Danh mục</label>
+									<select class="custom-select mr-sm-2" name="list">
+									  <option selected>Chọn....</option>
+									  <% for (var i = 0; i < postCategory.length; i++) { %>
+									  <option value="<%= postCategory[i].list %>"><%= postCategory[i].list %></option>
+									  <% } %>
+									</select>
+							    </div>
+							</div>
+							<div class="form-group row">
+								<label class="control-label col-md-3" for="name" >Tên Sản Phẩm <span class="required">*</span>
+								</label>
+								<div class="col-md-12">
+									<input type="text" required name="name" class="form-control col-md-7 ">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="control-label col-md-3" for="detail">Chi Tiết <span class="required">*</span>
+								</label>
+								<div class="col-md-12">
+									<input type="text" required name="detail" class="form-control col-md-7 ">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="control-label col-md-3" for="size">Size <span class="required">*</span>
+								</label>
+								<div class="col-md-12">
+									<input type="text" required name="size" class="form-control col-md-7 ">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="control-label col-md-3" for="price">Giá <span class="required">*</span>
+								</label>
+								<div class="col-md-12">
+									<input type="text" required name="price" class="form-control col-md-7 ">
+								</div>
+							</div>
+							<br>
+							<input type="file" name="img">
+							<br>
+							<br>
+							<button type="submit" class="btn btn-primary">Tạo Sản Phẩm Mới</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+    <!-- jQuery -->
+    <script src="../admin/js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+   <script src="../admin/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../admin/js/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../admin/js/nprogress.js"></script>
+    <!-- Dropzone.js -->
+    <script src="../admin/js/dropzone.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../admin/js/custom.min.js"></script>
+  </body>
+</html>
