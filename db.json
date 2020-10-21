@@ -1,0 +1,92 @@
+[
+    {
+        "_id": {
+            "$oid": "5f8155fa536da30d9068b803"
+        },
+        "name": "Trần Huy 2",
+        "address": "Quảng Ninh 2",
+        "phone": "09141361182",
+        "note": "Demo 2",
+        "cart": {
+            "items": {
+                "5f7cc8e0e3a8e138d81f60c7": {
+                    "item": {
+                        "_id": "5f7cc8e0e3a8e138d81f60c7",
+                        "name": "sp 2",
+                        "price": 2000000,
+                        "detail": "demo 2",
+                        "size": "32, 33, 45, 67, 62, 12314",
+                        "image": "uploads\\e913bfa476bf2977778169b677fc6876",
+                        "list": "Nam",
+                        "__v": 0
+                    },
+                    "quantity": 1,
+                    "price": 2000000
+                }
+            },
+            "totalItems": 1,
+            "totalPrice": 2000000
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f848387d6fd9941a82dac20"
+        },
+        "name": "Trần Huy",
+        "address": "Quảng Ninh",
+        "phone": "09141361182",
+        "note": "Demo 3",
+        "cart": {
+            "items": {},
+            "totalItems": 1,
+            "totalPrice": 10000
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f894d7e0e91ba0898f7e2b4"
+        },
+        "name": "Trần Huy 3",
+        "address": "1234",
+        "phone": "091413611823",
+        "note": "Demo 4",
+        "cart": {
+            "items": {},
+            "totalItems": 1,
+            "totalPrice": 3000
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f894d9c0e91ba0898f7e2b5"
+        },
+        "name": "Trần Huy 5",
+        "address": "12345",
+        "phone": "0914136118234",
+        "note": "Demo 5",
+        "cart": {
+            "items": {},
+            "totalItems": 2,
+            "totalPrice": 6000
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f894fc00607462b68bbe1c6"
+        },
+        "name": "Tran Huy 6",
+        "address": "123456",
+        "phone": "09141361182345",
+        "note": "Demo 6",
+        "cart": {
+            "items": {},
+            "totalItems": 1,
+            "totalPrice": 10000
+        },
+        "__v": 0
+    }
+]

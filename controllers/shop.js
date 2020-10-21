@@ -1,7 +1,6 @@
 const postproduct = require('../models/postProduct')
 const postcategory = require('../models/postCategory')
 const Cart = require('../models/cart')
-const session = require('express-session')
 
 module.exports = {
     index: async (req, res) => {
@@ -33,6 +32,7 @@ module.exports = {
         console.log(req.session.cart)
         const cart = new Cart(req.session.cart)
         const cartProduct = cart.getItems();
+        console.log(cartProduct)
         res.render('homepage/cart', { postProduct: postProduct, cartProduct: cartProduct, session: req.session })
     },
 
@@ -41,6 +41,7 @@ module.exports = {
         const cartProduct = cart.getItems();
         res.render('homepage/checkout', { session: req.session, cartProduct : cartProduct })
     },
+
     thankyou: function (req, res) {
         res.render('homepage/thankyou')
     }

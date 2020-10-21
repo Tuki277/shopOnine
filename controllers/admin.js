@@ -1,6 +1,6 @@
-const session = require('session');
 const postProduct = require('../models/postProduct');
 const postcategory = require('../models/postCategory');
+const checkOut = require('../models/checkout');
 
 module.exports = {
     login : function (req, res) {
@@ -27,5 +27,10 @@ module.exports = {
         else{
             res.send('Login Fail')
         }
+    },
+
+    report : async (req, res) => {
+        const checkOutProduct = await checkOut.find().lean().sort()
+        res.render('admin/report', { checkOutProduct : checkOutProduct })
     }
 }

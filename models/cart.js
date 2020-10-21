@@ -20,7 +20,7 @@ module.exports = function Cart(cart) {
         this.totalPrice -= this.items[id].price;
         delete this.items[id];
     };
-    
+
     this.getItems = function() {
         var arr = [];
         for (var id in this.items) {

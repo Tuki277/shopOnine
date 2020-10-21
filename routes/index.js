@@ -24,17 +24,22 @@ router.get('/cart', shopController.cart);
 
 router.get('/checkout', shopController.checkout);
 
+router.get('/thankyou', shopController.thankyou);
+
+router.get('/report', adminController.report);
+
 router.get('/login', adminController.login);
 
 router.get('/add/postProduct', adminController.postProduct);
 
 router.get('/add/postCategory', adminController.postCategory);
 
-router.get('/thankyou', shopController.thankyou);
+
 // router Post
 router.post('/login', adminController.authenLogin);
 
 router.post('/checkout', function (req, res) {
+
     console.log(req.body)
     console.log(req.session.cart)
 
